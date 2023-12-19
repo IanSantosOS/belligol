@@ -1,2 +1,2 @@
-# belligol
+# Belligol
 Belligol, Belligol, Bellingham
