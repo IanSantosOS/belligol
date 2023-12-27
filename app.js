@@ -20,8 +20,14 @@ const server = http.createServer((req, res) => {
         font-family: Arial, sans-serif;
         background-color: #eeeeee;
       }
+      td {
+        padding: 3px 5px;
+        border: 1px solid #000;
+      }
       table {
-        width: 95px;
+        min-width: 100px;
+        text-align: center;
+        border: 1px solid #000;
         background-color: #ffffff;
       }
     </style>
@@ -36,8 +42,8 @@ const server = http.createServer((req, res) => {
   else if (parseURL.pathname === '/tabela') {
     const valor = Number(parseURL.query.num);
 
-    if (parseURL.search) {
-      html += '<table border="1">'
+    if (valor) {
+      html += '<table>'
 
       for (let i = 0; i <= 10; i++) {
         html += '<tr>'
@@ -52,7 +58,7 @@ const server = http.createServer((req, res) => {
       html += '<div style="display: flex; gap: 1em; flex-wrap: wrap">';
 
       for (let j = 0; j <= 10; j++) {
-        html += '<table border="1">';
+        html += '<table>';
 
         for (let i = 0; i <= 10; i++) {
           html += '<tr>';
