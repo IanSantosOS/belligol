@@ -22,12 +22,14 @@ const server = http.createServer((req, res) => {
       }
       td {
         padding: 3px 5px;
-        border: 1px solid #000;
+        border: 1px solid #000000;
       }
       table {
-        min-width: 100px;
-        text-align: center;
-        border: 1px solid #000;
+          font-size: 18px;
+          min-width: 110px;
+          text-align: center;
+          font-family: monospace;
+        border: 1px solid #000000;
         background-color: #ffffff;
       }
     </style>
