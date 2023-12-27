@@ -35,9 +35,8 @@ const server = http.createServer((req, res) => {
   html += "<h1>Tabela Multiplicacao</h1>"
 
   if (parseURL.pathname === '/') {
-    html += '<p>Entre em <a href="/tabela">/tabela</a> para ver a tabuada</p>'
-    html += '<p> escreva: <a href="/tabela?num=1">/tabela?num=1</a> para uma tabuada expecífica</p>'
-    html += '<p> escreva: <a href="/tabela?num=1">/tabela?num=1</a> para uma tabuada expecífica</p>'
+    html += '<p>Entre em <a href="/tabela">/tabela</a> para ver a tabuada de 0 a 10</p>'
+    html += '<p> escreva: <a href="/tabela?num=1">/tabela?num=1</a> para uma tabuada expecifica</p>'
   }
   else if (parseURL.pathname === '/tabela') {
     const valor = Number(parseURL.query.num);
